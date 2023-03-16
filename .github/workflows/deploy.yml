@@ -8,7 +8,7 @@ jobs:
     env:
       MONGODB_CLUSTER_ADDRESS: saicluster.bbx5ini.mongodb.net
       MONGODB_USERNAME: saiteja
-      MONGODB_CLUSTER_ADDRESS: 7lmn8WrRPSprxpQe
+      MONGODB_PASSWORD: 7lmn8WrRPSprxpQe
       PORT: 7070
     runs-on: ubuntu-latest
     steps:
