@@ -7,8 +7,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: saicluster.bbx5ini.mongodb.net
-      MONGODB_USERNAME: saiteja
-      MONGODB_PASSWORD: 7lmn8WrRPSprxpQe
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD}}
       PORT: 7070
     runs-on: ubuntu-latest
     steps:
@@ -34,5 +34,5 @@ jobs:
     steps:
       - name: Output information
         run: |
-          echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
-          echo "MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}"
+          echo MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}
+          echo MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}
